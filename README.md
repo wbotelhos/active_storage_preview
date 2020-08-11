@@ -46,7 +46,7 @@ new ActiveStoragePreview({
 
 ### For Image used on background
 
-When using single image on background, like cover, sets the target directly on image. Image will receive the `background-image`. You must set `attribute` option as `style`.
+When using single image on background, like cover, sets the target on some element. Element will receive the `background-image`. You must set `attribute` option as `style`.
 
 ```html
 <div data-target></div>
