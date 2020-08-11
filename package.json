@@ -1,0 +1,46 @@
+{
+  "author": "Washington Botelho",
+  "bugs": {
+    "url": "https://github.com/wbotelhos/active_storage_preview/issues"
+  },
+  "contributors": [
+    "Washington Botelho <wbotelhos@gmail.com> (https://www.danca.com)"
+  ],
+  "dependencies": {
+    "jasmine-core": "^3.6.0",
+    "karma-jasmine": "^3.3.1"
+  },
+  "description": "Simple Active Storage script with direct upload and image preview.",
+  "devDependencies": {
+    "karma": "^5.1.0",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-firefox-launcher": "^1.3.0",
+    "karma-fixture": "^0.2.6",
+    "karma-html2js-preprocessor": "^1.1.0"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "spec"
+  },
+  "homepage": "https://github.com/wbotelhos/active_storage_preview",
+  "keywords": [
+    "activestorage",
+    "active_storage",
+    "directupload",
+    "preview"
+  ],
+  "license": "MIT",
+  "main": "lib/active_storage_preview.js",
+  "maintainers": [
+    "Washington Botelho <wbotelhos@gmail.com> (https://www.danca.com)"
+  ],
+  "name": "active_storage_preview",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wbotelhos/active_storage_preview"
+  },
+  "scripts": {
+    "test": "node_modules/karma/bin/karma start karma.conf.js"
+  },
+  "version": "0.0.1"
+}
