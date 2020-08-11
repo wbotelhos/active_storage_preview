@@ -7,7 +7,7 @@
 [![Code Climate](https://codeclimate.com/github/wbotelhos/active_storage_preview.png)](https://codeclimate.com/github/wbotelhos/active_storage_preview)
 [![Support](https://img.shields.io/badge/donate-%3C3-brightgreen.svg)](https://www.patreon.com/wbotelhos)
 
-Simple Direct Upload with Preview Image
+Simple Active Storage script with Direct Upload and Image Preview
 
 ## Options
 

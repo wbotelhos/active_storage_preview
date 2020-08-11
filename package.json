@@ -10,7 +10,7 @@
     "jasmine-core": "^3.6.0",
     "karma-jasmine": "^3.3.1"
   },
-  "description": "Simple Active Storage script with direct upload and image preview.",
+  "description": "Simple Active Storage script with Direct Upload and Image Preview",
   "devDependencies": {
     "karma": "^5.1.0",
     "karma-chrome-launcher": "^3.1.0",
