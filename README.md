@@ -16,17 +16,20 @@ Simple Active Storage script with Direct Upload and Image Preview
 |attribute   |'src'    |The attribute that will receive the image preview|
 |form        |undefined|The form that contain the file uplod field       |
 |target      |undefined|The target for the image(s)                      |
+|template    |undefined|Callback used to build the preview element       |
 |uploadButton|undefined|The button to trigger the upload file selection  |
 |uploadField |undefined|The file field                                   |
 
 ## Usage
 
-### For Image
+### Single Upload
 
-When using single image, sets the target directly on image. Image will receive the `src`.
+#### With no image on page
+
+Appends the template on target.
 
 ```html
-<img data-target>
+<div data-target></div>
 
 <form data-form enctype="multipart/form-data">
   <input data-upload-field type="file">
@@ -39,20 +42,47 @@ When using single image, sets the target directly on image. Image will receive t
 new ActiveStoragePreview({
   form:         document.querySelector('[data-form]'),
   target:       document.querySelector('[data-target]'),
+  template:     function(src, _id, _file) { return '<img src="' + src + '">' },
   uploadButton: document.querySelector('[data-upload-button]'),
   uploadField:  document.querySelector('[data-upload-field]'),
 }).create();
 ```
 
-### For Image used on background
+#### With image on page
 
-When using single image on background, like cover, sets the target on some element. Element will receive the `background-image`. You must set `attribute` option as `style`.
+Change the `src` attribute of image ignoring the template content.
+
+```html
+<div data-target>
+  <img src="pixel.png">
+</div>
+
+<form data-form enctype="multipart/form-data">
+  <input data-upload-field type="file">
+
+  <a data-upload-button href="javascript:void(0)">Select Image</a>
+</form>
+```
+
+```js
+new ActiveStoragePreview({
+  form:         document.querySelector('[data-form]'),
+  target:       document.querySelector('[data-target]'),
+  template:     function(src, _id, _file) { return '<img src="' + src + '">' },
+  uploadButton: document.querySelector('[data-upload-button]'),
+  uploadField:  document.querySelector('[data-upload-field]'),
+}).create();
+```
+
+#### When image is on background
+
+Ignores template and changes the property `background-image` of the `style` tag of the target. To enable it, you must set `attribute: 'style'.
 
 ```html
 <div data-target></div>
 
 <form data-form enctype="multipart/form-data">
-  <input data-upload-field multiple="multiple" type="file">
+  <input data-upload-field type="file">
 
   <a data-upload-button href="javascript:void(0)">Select Image</a>
 </form>
@@ -68,7 +98,7 @@ new ActiveStoragePreview({
 }).create();
 ```
 
-### For Images
+### Multiple Uploads
 
 When using multiple images, sets the target on a wrapper. Images will be appended. Do not forget the `multiple` attribute on field. :)
 
@@ -86,6 +116,7 @@ When using multiple images, sets the target on a wrapper. Images will be appende
 new ActiveStoragePreview({
   form:         document.querySelector('[data-form]'),
   target:       document.querySelector('[data-target]'),
+  template:     function(src, _id, _file) { return '<img src="' + src + '">' },
   uploadButton: document.querySelector('[data-upload-button]'),
   uploadField:  document.querySelector('[data-upload-field]'),
 }).create();
