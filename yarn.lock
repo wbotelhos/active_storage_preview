@@ -560,7 +560,7 @@ isexe@^2.0.0:
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
 
-jasmine-core@^3.5.0, jasmine-core@^3.6.0:
+jasmine-core@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/jasmine-core/-/jasmine-core-3.6.0.tgz#491f3bb23941799c353ceb7a45b38a950ebc5a20"
   integrity sha512-8uQYa7zJN8hq9z+g8z1bqCfdC8eoDAeVnM5sfqs7KHv9/ifoJ500m018fpFc7RDaO6SWCLCXwo/wPSNcdYTgcw==
@@ -596,14 +596,14 @@ karma-html2js-preprocessor@^1.1.0:
   resolved "https://registry.yarnpkg.com/karma-html2js-preprocessor/-/karma-html2js-preprocessor-1.1.0.tgz#fc09edf04bbe2bb6eee9ba1968f826b7388020bd"
   integrity sha1-/Ant8Eu+K7bu6boZaPgmtziAIL0=
 
-karma-jasmine@^3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/karma-jasmine/-/karma-jasmine-3.3.1.tgz#c01b1a2ec973e1531c1f6535e1d7d66b8e4275c2"
-  integrity sha512-Nxh7eX9mOQMyK0VSsMxdod+bcqrR/ikrmEiWj5M6fwuQ7oI+YEF1FckaDsWfs6TIpULm9f0fTKMjF7XcrvWyqQ==
+karma-jasmine@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/karma-jasmine/-/karma-jasmine-4.0.0.tgz#2d172dc5afdd047892a23563ec4db480e93d22c7"
+  integrity sha512-6hFwluoj6i/ItzG1D3MEfBHrAgKqyS+KsAqaFqeIsJth1B+pCIh6AItT94w7Z5FZlOA7Qcs9qoibUMocM9yBPw==
   dependencies:
-    jasmine-core "^3.5.0"
+    jasmine-core "^3.6.0"
 
-karma@^5.1.0:
+karma@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/karma/-/karma-5.1.1.tgz#4e472c1e5352d73edbd2090726afdb01d7869d72"
   integrity sha512-xAlOr5PMqUbiKXSv5PCniHWV3aiwj6wIZ0gUVcwpTCPVQm/qH2WAMFWxtnpM6KJqhkRWrIpovR4Rb0rn8GtJzQ==
